@@ -4,8 +4,10 @@ export default {
     "./index.html",
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  darkMode: 'class', // ✅ 이 줄 추가!
   theme: {
     extend: {},
   },
   plugins: [],
 }
+
