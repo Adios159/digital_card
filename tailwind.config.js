@@ -1,9 +1,10 @@
+/** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class', // ✅ 요 줄 추가
   content: [
     "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class', // 다크 모드를 'class' 방식으로 활성화
   theme: {
     extend: {},
   },
