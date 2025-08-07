@@ -4,12 +4,7 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    // 다크모드 클래스 토글
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
+    document.documentElement.classList.toggle('dark', darkMode);
   }, [darkMode]);
 
   return (
@@ -21,8 +16,10 @@ function App() {
         {darkMode ? '☀️ 라이트 모드' : '🌙 다크 모드'}
       </button>
 
-      <h1 className="text-3xl font-bold">디지털 명함</h1>
-      <p className="text-lg">React + Tailwind + Vercel 배포</p>
+      {/* 명함 UI */}
+      <div className="bg-white dark:bg-gray-800 text-black dark:text-white p-6 rounded-lg shadow-lg">
+        {/* ...기존 명함 내용 */}
+      </div>
     </div>
   );
 }
