@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}",  // ✅ JSX 파일까지 포함
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {},
